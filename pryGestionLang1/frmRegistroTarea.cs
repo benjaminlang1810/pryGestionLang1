@@ -24,7 +24,7 @@ namespace pryGestionLang1
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
