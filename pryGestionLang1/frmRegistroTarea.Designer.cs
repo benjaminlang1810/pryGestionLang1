@@ -46,14 +46,21 @@
             this.chkInvestigacion = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbReunion.SuspendLayout();
             this.gbTareas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(39, 27);
+            this.lblFecha.Location = new System.Drawing.Point(16, 19);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(37, 13);
             this.lblFecha.TabIndex = 0;
@@ -61,7 +68,7 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(42, 43);
+            this.dtpFecha.Location = new System.Drawing.Point(19, 35);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(235, 20);
             this.dtpFecha.TabIndex = 1;
@@ -69,7 +76,7 @@
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(41, 79);
+            this.lblTipo.Location = new System.Drawing.Point(18, 71);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(28, 13);
             this.lblTipo.TabIndex = 2;
@@ -78,7 +85,7 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(42, 95);
+            this.cboTipo.Location = new System.Drawing.Point(19, 87);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(235, 21);
             this.cboTipo.TabIndex = 3;
@@ -86,7 +93,7 @@
             // lblDetalle
             // 
             this.lblDetalle.AutoSize = true;
-            this.lblDetalle.Location = new System.Drawing.Point(41, 130);
+            this.lblDetalle.Location = new System.Drawing.Point(18, 122);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblDetalle.TabIndex = 4;
@@ -103,16 +110,16 @@
             // txtDetalle
             // 
             this.txtDetalle.FormattingEnabled = true;
-            this.txtDetalle.Location = new System.Drawing.Point(44, 146);
+            this.txtDetalle.Location = new System.Drawing.Point(21, 138);
             this.txtDetalle.Name = "txtDetalle";
-            this.txtDetalle.Size = new System.Drawing.Size(233, 69);
+            this.txtDetalle.Size = new System.Drawing.Size(233, 30);
             this.txtDetalle.TabIndex = 5;
             // 
             // gbReunion
             // 
             this.gbReunion.Controls.Add(this.optNO);
             this.gbReunion.Controls.Add(this.optSI);
-            this.gbReunion.Location = new System.Drawing.Point(44, 223);
+            this.gbReunion.Location = new System.Drawing.Point(288, 19);
             this.gbReunion.Name = "gbReunion";
             this.gbReunion.Size = new System.Drawing.Size(233, 44);
             this.gbReunion.TabIndex = 6;
@@ -148,9 +155,9 @@
             this.gbTareas.Controls.Add(this.chkNotasReunion);
             this.gbTareas.Controls.Add(this.chkRepositorio);
             this.gbTareas.Controls.Add(this.chkInvestigacion);
-            this.gbTareas.Location = new System.Drawing.Point(42, 273);
+            this.gbTareas.Location = new System.Drawing.Point(288, 71);
             this.gbTareas.Name = "gbTareas";
-            this.gbTareas.Size = new System.Drawing.Size(235, 82);
+            this.gbTareas.Size = new System.Drawing.Size(233, 97);
             this.gbTareas.TabIndex = 7;
             this.gbTareas.TabStop = false;
             this.gbTareas.Text = "Tareas";
@@ -197,9 +204,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(42, 377);
+            this.btnCancelar.Location = new System.Drawing.Point(19, 346);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(209, 43);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -207,19 +214,59 @@
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(202, 377);
+            this.btnGrabar.Location = new System.Drawing.Point(312, 346);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
+            this.btnGrabar.Size = new System.Drawing.Size(209, 43);
             this.btnGrabar.TabIndex = 9;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(22, 177);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(499, 149);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Fecha";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "TipoActividad";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "DetalleActividad";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Reunion";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Tareas";
+            this.Column5.Name = "Column5";
+            // 
             // frmRegistroTarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 415);
+            this.ClientSize = new System.Drawing.Size(536, 404);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbTareas);
@@ -238,6 +285,7 @@
             this.gbReunion.PerformLayout();
             this.gbTareas.ResumeLayout(false);
             this.gbTareas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +311,11 @@
         private System.Windows.Forms.CheckBox chkInvestigacion;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

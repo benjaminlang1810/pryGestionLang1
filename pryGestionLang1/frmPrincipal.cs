@@ -19,7 +19,7 @@ namespace pryGestionLang1
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            frmPrincipal frmPrincipal = new frmPrincipal(); 
+            frmInicioDeSesion frmPrincipal = new frmInicioDeSesion(); 
             frmPrincipal.ShowDialog();
         }
 
