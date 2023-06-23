@@ -16,5 +16,16 @@ namespace pryGestionLang1
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal(); 
+            frmPrincipal.ShowDialog();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }
