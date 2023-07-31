@@ -21,5 +21,24 @@ namespace pryGestionLang1
         {
             this.Close();   
         }
+
+        private void frmInicioDeSesion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "admin" && txtContraseña.Text == "123")
+            {
+                Form Actividad = new frmRegistroTarea();
+                Actividad.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error de datos");
+            }
+        }
     }
 }

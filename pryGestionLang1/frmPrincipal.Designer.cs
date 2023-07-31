@@ -34,9 +34,10 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(32, 46);
+            this.btnIngresar.Location = new System.Drawing.Point(43, 57);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(155, 88);
+            this.btnIngresar.Size = new System.Drawing.Size(207, 108);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "Ingresar ";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(32, 149);
+            this.btnVolver.Location = new System.Drawing.Point(43, 183);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(155, 88);
+            this.btnVolver.Size = new System.Drawing.Size(207, 108);
             this.btnVolver.TabIndex = 1;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -54,13 +56,15 @@
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(229, 249);
+            this.ClientSize = new System.Drawing.Size(305, 306);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnIngresar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
 
         }

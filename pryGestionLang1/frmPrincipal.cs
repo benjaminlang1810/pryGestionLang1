@@ -27,5 +27,10 @@ namespace pryGestionLang1
         {
             this.Close();   
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
